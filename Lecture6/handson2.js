@@ -194,34 +194,66 @@
 // let k = 0
 // findSumEqualtoK(arr, k)
 
+// function findSumEqualtoK(arr, k) {
+//   let count = 0;
+//   let maxlength = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let sum = 0;
+//     let subarray = [];
+//     for (let j = i; j < arr.length; j++) {
+//       sum += arr[j];
+//       subarray.push(arr[j]);
+//       if (sum === k) {
+//         console.log({ subarray });
+//         let length = subarray.length;
+//         if (maxlength < length) {
+//           maxlength = length;
+//           highsubarray = subarray;
+//         }
+//         count++;
+//       }
+//     }
+//   }
+
+//   console.log({ count });
+//   console.log(
+//     `Max length of subarray with sum k: ${maxlength},[${highsubarray}]`
+//   );
+// }
+
+// let arr = [1, 2, -3, 0, 1, -1, 1];
+// let k = 0;
+// findSumEqualtoK(arr, k);
+
+
+
+//n - k + 1;
+// n < i + k............
 function findSumEqualtoK(arr, k) {
   let count = 0;
-  let maxlength = 0;
-
+ 
   for (let i = 0; i < arr.length; i++) {
     let sum = 0;
     let subarray = [];
     for (let j = i; j < arr.length; j++) {
-      sum += arr[j];
+      sum = sum +  arr[j];
       subarray.push(arr[j]);
-      if (sum === k) {
-        console.log({ subarray });
-        let length = subarray.length;
-        if (maxlength < length) {
-          maxlength = length;
-          highsubarray = subarray;
-        }
+      if(subarray.length == k){
+        console.log(subarray)
         count++;
+        break;
       }
     }
+    
   }
 
-  console.log({ count });
-  console.log(
-    `Max length of subarray with sum k: ${maxlength},[${highsubarray}]`
-  );
+  return count;
 }
 
 let arr = [1, 2, -3, 0, 1, -1, 1];
-let k = 0;
-findSumEqualtoK(arr, k);
+let k = 3;
+console.log(findSumEqualtoK(arr, k));
+
+
+
