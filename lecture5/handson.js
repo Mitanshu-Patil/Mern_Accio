@@ -471,7 +471,7 @@ subarrays = [[1], [2], [3], [4], [5]];
 
 
 
-//right rotation k=1
+//right rotation k=1..
 // let arr = [1,2,3,4,5] ===>[5,1,2,3,4]
 
 // let arr = [1, 2, 3, 4, 5];
