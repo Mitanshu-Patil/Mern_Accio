@@ -92,32 +92,32 @@
 
 // console.log(rightRotate(arr, k));
 
-// let arr = [-1, 5, -3, 2, -1, 3];
+let arr = [-1, 5, -3, 2, -1, 3];
 
-// function maxSubArray(arr) {
-//   let max = arr[0];
+function maxSubArray(arr) {
+  let max = arr[0];
 
-//   for (let i = 0; i < arr.length; i++) {
-//     let sum = 0;
-//     let res = [];
-//     let start = 0;
-//     let end = 0;
-//     for (let j = i; j < arr.length; j++) {
-//       res.push(arr[j]);
-//       console.log(res);
-//       sum = sum +  arr[j];
-//       if (sum > max) {
-//         max = sum;
-//         start = 0;
-//         end = i;
-//       }
-//     }
-//   }
+  for (let i = 0; i < arr.length; i++) {
+    let sum = 0;
+    let res = [];
+    let start = 0;
+    let end = 0;
+    for (let j = i; j < arr.length; j++) {
+      res.push(arr[j]);
+      console.log(res);
+      sum = sum +  arr[j];
+      if (sum > max) {
+        max = sum;
+        start = 0;
+        end = i;
+      }
+    }
+  }
 
-//   return max;
-// }
+  return max;
+}
 
-// console.log("final max: " + maxSubArray(arr));
+console.log("final max: " + maxSubArray(arr));
 
 // function findMaxSumArray(arr) {
 //     let maxSum = arr[0];
@@ -139,6 +139,8 @@
 //     // Print the subarray and its sum
 //     console.log(`Subarray with maximum sum: [${arr.slice(start, end + 1)}], Sum: ${maxSum}`);
 // }
+//  let arr = [-1, 5, -3, 2, -1, 3];
+// findMaxSumArray(arr)
 
 // let arr = [-1, 5, -3, 2, -1, 3];
 // findMaxSumArray(arr);
@@ -160,36 +162,13 @@
 //         }
 //     }
 
-//     console.log(`Subarray with maximum sum: ${maxSum}`);
-// console.log(Sum of Subarray from ${arr.slice(i, j)} is ${maxSum})
+//     // console.log(`Subarray with maximum sum: ${maxSum}`);
+// console.log(`Sum of Subarray from ${arr.slice(start, end)} is ${maxSum}`)
 // }
 
 // let arr = [-1, 5, -3, 2, -1, 3];
 // findMaxSumArray(arr);
 
-// function findSumEqualtoK(arr, k) {
-//     let count = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//         let sum = 0;
-//         let subarray = [];
-//         maxlength = 0;
-//         for (let j = i; j < arr.length; j++) {
-//             sum = sum + arr[j];
-//             subarray.push(arr[j]);
-//             if (sum === k) {
-//                 console.log({ subarray });
-//                 length = subarray.length;
-//                 console.log(length);
-//                 if(maxlength > length)
-//                   length = maxlength;
-//                   count++
-//             }
-
-//         }
-//     }
-//     console.log({ count })
-//     console.log(length - 1)
-// }
 // let arr = [1, 2 - 3, 0, 1, -1, 1];
 // let k = 0
 // findSumEqualtoK(arr, k)
@@ -226,34 +205,47 @@
 // let k = 0;
 // findSumEqualtoK(arr, k);
 
-
-
 //n - k + 1;
 // n < i + k............
-function findSumEqualtoK(arr, k) {
-  let count = 0;
- 
-  for (let i = 0; i < arr.length; i++) {
-    let sum = 0;
-    let subarray = [];
-    for (let j = i; j < arr.length; j++) {
-      sum = sum +  arr[j];
-      subarray.push(arr[j]);
-      if(subarray.length == k){
-        console.log(subarray)
-        count++;
-        break;
-      }
-    }
-    
-  }
+// function findSumEqualtoK(arr, k) {
+//   let count = 0;
 
-  return count;
-}
+//   for (let i = 0; i < arr.length; i++) {
+//     let sum = 0;
+//     let subarray = [];
+//     for (let j = i; j < arr.length; j++) {
+//       sum = sum +  arr[j];
+//       subarray.push(arr[j]);
+//       if(subarray.length == k){
+//         console.log(subarray)
+//         count++;
+//         break;
+//       }
+//     }
 
-let arr = [1, 2, -3, 0, 1, -1, 1];
-let k = 3;
-console.log(findSumEqualtoK(arr, k));
+//   }
 
+//   return count;
+// }
+
+// let arr = [1, 2, -3, 0, 1, -1, 1];
+// let k = 3;
+// console.log(findSumEqualtoK(arr, k));
+
+
+
+// function solve(arr, n) {
+//   let count = 0;
+//   for(let i = 0; i < arr.length;i++){ 
+//       let res = [];
+//     for(let j = i; j < arr.length;j++){
+//       res.push(arr[j]);
+//      console.log(res);
+     
+//     }
+//   }
+
+  
+// }
 
 
