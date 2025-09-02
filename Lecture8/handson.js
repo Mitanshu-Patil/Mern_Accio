@@ -294,29 +294,29 @@ portfoObj.addSkills("JAVA");
 
 
 
-const bookObj = {
-    book1: {
-        title: "The Alchemist",
-        author: "Paulo Coelho",
-        price: 399,
-        publishedYear: 1988
+const movieObj = {
+    movie1: {
+        title: "Inception",
+        director: "Christopher Nolan",
+        year: 2010,
+        rating: 8.8
     },
-    book2: {
-        title: "Atomic Habits",
-        author: "James Clear",
-        price: 499,
-        publishedYear: 2018
+    movie2: {
+        title: "Interstellar",
+        director: "Christopher Nolan",
+        year: 2014,
+        rating: 8.6
     },
-    book3: {
-        title: "Rich Dad Poor Dad",
-        author: "Robert T. Kiyosaki",
-        price: 299,
-        publishedYear: 1997
+    movie3: {
+        title: "The Dark Knight",
+        director: "Christopher Nolan",
+        year: 2008,
+        rating: 9.0
     }
 }
 
-
-for (let i in bookObj) {
-    if (bookObj[i].publishedYear > 1999)
-        console.log(`Name : ${bookObj[i].name}, Author : ${bookObj[i].author}`)
+for (let key in movieObj) {
+    if (movieObj[key].year > 2010) {
+        console.log(`Title: ${movieObj[key].title}, Director: ${movieObj[key].director}`);
+    }
 }
