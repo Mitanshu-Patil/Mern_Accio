@@ -101,7 +101,7 @@
 
 // console.log(str.slice(3));    //Prints string from index 3 to n
 
-// console.log(str.replace("m", "W"))      //replace the first value of m with W
+//console.log(str.replace("m", "W"))      //replace the first value of m with W
 
 // console.log(str.replaceAll("m", "W"))    //replace all the values of m with W
 
