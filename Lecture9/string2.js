@@ -68,7 +68,7 @@
 // let str1 = "madam1";
 // function palindromeString(str1){
 //     let palindrome = true;
-//    for(let i = 0; i <str1.length;i++){
+//    for(let i = 0; i < Math.floor(str1.length/2);i++){
 //     if(str1[i] !== str1[str1.length - 1 - i]){
 //         palindrome = false;
 //         break;
@@ -136,5 +136,6 @@
 
 // console.log(longestWord(str));
 
-//hw
+
+
 
