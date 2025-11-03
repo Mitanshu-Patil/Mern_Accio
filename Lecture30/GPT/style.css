@@ -1,0 +1,128 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #202123;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main Container Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar Section */
+.sidebar {
+  background-color: #2d2e35;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid white;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+  padding: 8px 0;
+  margin-bottom: 8px;
+}
+
+.sidebar a:hover {
+  color: #00ff99;
+}
+
+#settings {
+  margin-top: auto;
+  text-align: left;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* Main Chat Area */
+.main {
+  display: grid;
+  grid-template-rows: 1fr 10fr 1.5fr;
+  width: 100%;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  padding: 20px;
+  border-bottom: 1px solid #555;
+}
+
+/* Suggestions Section */
+.suggestions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.suggestion {
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 250px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  background-color: #343541;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.suggestion:hover {
+  background-color: #3f414b;
+}
+
+/* Chat Input Section */
+.chat-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-top: 1px solid #555;
+}
+
+.chat-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #40414f;
+  color: white;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: #19c37d;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #00a86b;
+}

@@ -201,7 +201,8 @@ subarrays = [[1], [2], [3], [4], [5]];
 
 // const arr = [1,2,3,4,5];
 
-// for(let i = 0; i <arr.length;i++){
+
+// for(let i = 0; i < arr.length;i++){
 //     let res = [];
 //     for(let j = i; j < arr.length;j++){
 //     res.push(arr[j]);
@@ -529,24 +530,74 @@ subarrays = [[1], [2], [3], [4], [5]];
 
 
 
-let arr = [1, 2, 3, 4, 5];
-let k = 8;
+// let arr = [1, 2, 3, 4, 5];
+// let k = 8;
 
-function rightRotate(arr, k) {
-  k = k % arr.length; 
+// function rightRotate(arr, k) {
+//   k = k % arr.length; 
 
- let arr = [1, 2, 3, 4, 5];
-let copy = arr[arr.length - 1];
-let prev = arr[0];
-for (let i = 0; i < arr.length; i++) {
-   let temp = arr[i];
-   arr[i] = prev;
-   prev = temp;
+//  let arr = [1, 2, 3, 4, 5];
+// let copy = arr[arr.length - 1];
+// let prev = arr[0];
+// for (let i = 0; i < arr.length; i++) {
+//    let temp = arr[i];
+//    arr[i] = prev;
+//    prev = temp;
+// }
+// arr[0] = copy;
+//   return arr; 
+// }
+
+// console.log(rightRotate(arr, k));
+
+
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+function largestAltitude(arr) {
+   
+   let result = 0;
+   let newarr = [];
+   newarr.push(0);
+  for(let i = 0; i < arr.length;i++){
+    result = result + arr[i];
+    newarr.push(result);
+  }
+  //  console.log(newarr);
+   let max = newarr[0];
+   for(let j = 0; j < newarr.length;j++){
+    if( newarr[j] > max ){
+      max = newarr[j];
+    }
+    
+  }
+  return max;
+
 }
-arr[0] = copy;
-  return arr; 
+
+readline.question('', n => {
+  readline.question('', gain => {
+    gain = gain.split(' ').map(Number);
+    let maxaltitude = largestAltitude(gain);
+    console.log(maxaltitude);
+    readline.close();
+  });
+});
+
+
+function largestAltitude(gain) {
+  let current = 0;
+  let highest = 0;
+
+  for (let i = 0; i < gain.length; i++) {
+    current =  current +  gain[i];      
+    if (current > highest) {
+      highest = current;     
+    }
+  }
+
+  return highest;
 }
-
-console.log(rightRotate(arr, k));
-
 

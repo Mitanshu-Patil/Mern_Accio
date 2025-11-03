@@ -21,7 +21,7 @@
 //   par_address: "Pune",
 //   par_occupation: "Teacher",
 // };
-
+    
 // console.log(studentObj.name);
 // console.log(studentObj["name"]);
 // const studentNameProperty = "name";
@@ -36,7 +36,7 @@
 
 // //delete the object
 // delete parentObj.par_occupation;
-// console.log(parentObj);
+// console.log(parentObj); 
 
 // const personObj = {
 //   name: "Sanket",

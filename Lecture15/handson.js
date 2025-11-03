@@ -40,7 +40,7 @@
 // function print(n){
 //     if(n == 0){
 //         return;
-//     }
+//     }    
 //     console.log(n);
 //     print(n -1);
 // }
@@ -129,7 +129,7 @@
 //     let rem = n % 10;
 //     sum = sum * 10 + rem;
 //     reversed(Math.floor(n/10));
-
+    
 // }
 // reversed(n)
 // console.log(sum);
