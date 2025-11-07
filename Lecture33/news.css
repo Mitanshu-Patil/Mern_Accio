@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+
+.head-data h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #000;
+}
+
+
+#para-head {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+.form-data {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form-data form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.email-style  {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  text-align: center;
+}
+
+button {
+  padding: 15px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* button:hover {
+  background-color: #1e40af;
+} */
+
+.note {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+
+@media (max-width: 600px) {
+  .head-data h1 {
+    font-size: 1.5rem;
+  }
+
+  #para-head {
+    font-size: 0.9rem;
+  }
+
+  .form-data {
+    width: 100%;
+  }
+}

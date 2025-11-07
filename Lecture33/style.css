@@ -1,0 +1,114 @@
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        /* overflow: hidden;  */
+    }
+    html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;      
+    scrollbar-width: none;       
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(223, 235, 237);    
+        /* background: linear-gradient(135deg, #1a0033, #0a0020, #000013); */
+        padding: 100px;
+        
+    }
+    #heading{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: rgb(83, 78, 78);
+    }
+    .head-info{
+        height: 30%;
+        width: 30%;
+        /* background-color: rgb(170, 197, 220); */
+        margin-left: 100px;
+    
+
+    }
+    #para-style{
+    font-size: 2.4rem;
+    font-weight: bold;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-items: center;  
+        margin-top: 100px;
+
+    
+    }
+    .component{
+        height: 400px;
+        width: 300px;
+         background-color: rgb(223, 235, 237); 
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding: 20px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    #card1-style{
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+    
+    }
+    #comp-para{
+        font-size: 1.5rem;
+        color: rgb(61, 57, 57);
+    }
+
+
+  @media (max-width: 768px) {
+  .head-info {
+    margin-left: 0;
+    text-align: left;     
+    width: 100%; 
+    height: auto;  
+  }
+
+  #heading {
+    font-size: 1.8rem;
+    text-align: left;      
+  }
+
+  #para-style {
+    font-size: 1.2rem;
+    text-align: left;    
+  }
+
+  .container {
+    min-height: 100vh;  
+    height: auto;
+    width: 100%;
+    background-color: rgb(223, 235, 237); 
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    margin-top: 60px;
+    justify-items: start;    
+    align-items: start;
+  }
+
+  .component {
+    width: 90%; 
+    max-width: 350px;
+    margin-left: 0;           
+    text-align: left;        
+  }
+}
